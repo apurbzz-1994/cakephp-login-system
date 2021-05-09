@@ -12,6 +12,7 @@ use Cake\ORM\Entity;
  * @property string $name
  * @property string $phone_number
  * @property int $user_id
+ * @property string|null $education
  *
  * @property \App\Model\Entity\User $user
  */
@@ -30,6 +31,7 @@ class Inspector extends Entity
         'name' => true,
         'phone_number' => true,
         'user_id' => true,
+        'education' => true,
         'user' => true,
     ];
 }

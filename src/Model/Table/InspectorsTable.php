@@ -63,14 +63,20 @@ class InspectorsTable extends Table
 
         $validator
             ->scalar('name')
-            ->maxLength('name', 128)
+            ->maxLength('name', 255)
             ->requirePresence('name', 'create')
             ->notEmptyString('name');
 
         $validator
-            ->decimal('phone_number')
+            ->scalar('phone_number')
+            ->maxLength('phone_number', 128)
             ->requirePresence('phone_number', 'create')
             ->notEmptyString('phone_number');
+
+        $validator
+            ->scalar('education')
+            ->maxLength('education', 128)
+            ->allowEmptyString('education');
 
         return $validator;
     }

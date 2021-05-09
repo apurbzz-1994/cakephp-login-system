@@ -20,7 +20,7 @@
                 <?php
                     echo $this->Form->control('email');
                     echo $this->Form->control('password');
-                    echo $this->Form->control('role', ['options'=>['Contractor'=>'Contractor']]);
+                    // echo $this->Form->control('role', ['options'=>['Contractor'=>'Contractor']]);
                 ?>
                 <h4>Information</h4>
                 <?php

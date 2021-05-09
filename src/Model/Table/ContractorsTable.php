@@ -67,6 +67,16 @@ class ContractorsTable extends Table
             ->requirePresence('name', 'create')
             ->notEmptyString('name');
 
+        $validator
+            ->scalar('expertise')
+            ->maxLength('expertise', 128)
+            ->allowEmptyString('expertise');
+
+        $validator
+            ->scalar('phone_number')
+            ->maxLength('phone_number', 128)
+            ->allowEmptyString('phone_number');
+
         return $validator;
     }
 

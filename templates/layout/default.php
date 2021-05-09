@@ -14,7 +14,7 @@
  * @var \App\View\AppView $this
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Bob\'s Construction';
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,36 +22,43 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        <?= $cakeDescription ?>:
+        <?= $cakeDescription ?> - 
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <!--font declarations for ALL templates -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Antonio&display=swap" rel="stylesheet">
 
-    <?= $this->Html->css(['normalize.min', 'milligram.min', 'cake']) ?>
+    <!--The CSS stuff for ALL templates-->
+    <?= $this->Html->css(['bootstrap-grid', 'bootstrap-reboot', 'bootstrap', 'style']) ?>
 
     <?= $this->fetch('meta') ?>
+    <!--This would fetch the CSS for individual templates given that you're using
+    block=true-->
     <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="top-nav-title">
-            <a href="<?= $this->Url->build('/') ?>"><span>Cake</span>PHP</a>
-        </div>
-        <div class="top-nav-links">
-            <a target="_blank" rel="noopener" href="https://book.cakephp.org/4/">Documentation</a>
-            <a target="_blank" rel="noopener" href="https://api.cakephp.org/">API</a>
-        </div>
-    </nav>
-    <main class="main">
-        <div class="container">
-            <?= $this->Flash->render() ?>
-            <?= $this->fetch('content') ?>
-        </div>
-    </main>
+    <!--Loading the navbar-->
+    <?= $this->element('nav')  ?>
+    
+    <!--rendering page content-->
+    <?= $this->Flash->render() ?>
+    <?= $this->fetch('content') ?>
+    
     <footer>
     </footer>
+     <!--JQuery for bootstrap-->
+     <!--Note: JQuery needs to be loaded before other JS files since some of them 
+     might be dependent on JQuery--->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <!--Note: this would fetch script declarations for individual views given
+    that you're using block=true while setting them up-->
+    <?= $this->fetch('script') ?>
+   
+    
+
 </body>
 </html>

@@ -11,6 +11,8 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $name
  * @property int $user_id
+ * @property string|null $expertise
+ * @property string|null $phone_number
  *
  * @property \App\Model\Entity\User $user
  */
@@ -28,6 +30,8 @@ class Contractor extends Entity
     protected $_accessible = [
         'name' => true,
         'user_id' => true,
+        'expertise' => true,
+        'phone_number' => true,
         'user' => true,
     ];
 }
