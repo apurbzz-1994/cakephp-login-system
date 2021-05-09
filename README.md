@@ -12,6 +12,10 @@ Home page
 ![Start page](/webroot/img/screens/homepage.png)
 Login page
 ![Friends view](/webroot/img/screens/login.png)
+Registration Selection
+![Friends view](/webroot/img/screens/registration.png)
+Creating an account
+![Friends view](/webroot/img/screens/registration-2.png)
 
 ## Installation
 
