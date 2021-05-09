@@ -9,13 +9,17 @@ from Cake's Authentication plugin.
 
 ## Screenshots
 Home page
-![Start page](/webroot/img/screens/homepage.png)
+![Home page](/webroot/img/screens/homepage.png)
 Login page
-![Friends view](/webroot/img/screens/login.png)
+![Login page](/webroot/img/screens/login.png)
 Registration Selection
-![Friends view](/webroot/img/screens/registration.png)
+![Registration Selection](/webroot/img/screens/registration.png)
 Creating an account
-![Friends view](/webroot/img/screens/registration-2.png)
+![New account](/webroot/img/screens/registration-2.png)
+
+## Database Schema
+![Database Schema](/webroot/img/screens/db_schema.png)
+
 
 ## Installation
 
