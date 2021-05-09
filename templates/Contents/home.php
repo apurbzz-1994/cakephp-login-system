@@ -33,7 +33,7 @@
         <div class="col-12 col-md-6 col-lg-6 px-5 py-2">
             <h1>Join as an Inspector</h1>
             <p style="margin-top:2em;">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-            <button type="button" class="btn btn-secondary btn-lg" style="margin-top:2em;">Learn more</button>
+            <button type="button" class="btn btn-secondary btn-lg">Learn more</button>
         </div>
         <div class="col-12 col-md-6 col-lg-6 px-5 py-2">
             <h1>Join as a Contractor</h1>

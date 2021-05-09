@@ -17,7 +17,7 @@
                 <?= $this->Form->submit('Login', ['class' => 'btn btn-primary'] ); ?>
             <?= $this->Form->end() ?>
             
-            <small class="form-text text-muted">Not registered yet? <?= $this->Html->link("Create a new account", ['action' => 'addContractor']) ?></small>
+            <small class="form-text text-muted">Not registered yet? <?= $this->Html->link("Create a new account", ['controller'=>'Contents','action' => 'registration']) ?></small>
         </div> 
     </div>
 </div>

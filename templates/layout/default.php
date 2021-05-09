@@ -31,6 +31,9 @@ $cakeDescription = 'Bob\'s Construction';
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Antonio&display=swap" rel="stylesheet">
 
+    <!--Font-awesome declaration for all templates-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
     <!--The CSS stuff for ALL templates-->
     <?= $this->Html->css(['bootstrap-grid', 'bootstrap-reboot', 'bootstrap', 'style']) ?>
 
