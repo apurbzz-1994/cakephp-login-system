@@ -14,7 +14,7 @@
 <div class="row justify-content-md-center py-5">
     <div class="col-12 col-md-6 col-lg-6 px-5">
             <h2 style = 'padding: 1em 0 1em 0; text-align: center';>Register as a Contractor</h2>
-            <?= $this->Form->create() ?>
+            <?= $this->Form->create($user) ?>
                 <h4><i class="fas fa-user"></i> Account Information</h4>
                 <div class="pt-4 pl-4">
                     <div class="form-group">
