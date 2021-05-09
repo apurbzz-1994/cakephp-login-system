@@ -21,6 +21,13 @@ Creating an account
 ![Database Schema](/webroot/img/screens/db_schema.png)
 
 
+## References
+Bob the builder jumbotron picture downloaded from [PinClipart](https://www.pinclipart.com/picdir/big/220-2208568_construction-zone-clip-art.png)
+
+Bob the builder bottom section picture downloaded from [WallpaperCave](https://wallpapercave.com/bob-the-builder-wallpapers)
+
+
+
 ## Installation
 
 1. Download [Composer](https://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
