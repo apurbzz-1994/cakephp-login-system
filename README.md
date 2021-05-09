@@ -9,9 +9,9 @@ from Cake's Authentication plugin.
 
 ## Screenshots
 Home page
-![Start page](/img/screens/homepage.png)
+![Start page](/webroot/img/screens/homepage.png)
 Login page
-![Friends view](/img/screens/login.png)
+![Friends view](/webroot/img/screens/login.png)
 
 ## Installation
 
