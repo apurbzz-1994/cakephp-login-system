@@ -10,6 +10,7 @@
             border: 0.5px solid magenta;
                
         }  */
+
 </style>
 <div class="row justify-content-md-center py-5">
     <div class="col-12 col-md-6 col-lg-6 px-5">
@@ -18,10 +19,12 @@
                 <h4><i class="fas fa-user"></i> Account Information</h4>
                 <div class="pt-4 pl-4">
                     <div class="form-group">
-                        <?= $this->Form->control('email', ['required' => true, 'class'=>'form-control', 'type'=>'email', 'placeholder'=>'Enter email']) ?>
+                        <?= $this->Form->control('email', ['required' => true, 'class'=>'form-control', 'type'=>'email', 
+                        'placeholder'=>'Enter email']) ?>
                     </div>
                     <div class="form-group">
-                        <?= $this->Form->control('password', ['required' => true, 'class'=>'form-control', 'type'=>'password', 'placeholder'=>'Enter password']) ?>
+                        <?= $this->Form->control('password', 
+                        ['required' => true, 'class'=>'form-control', 'type'=>'password', 'placeholder'=>'Enter password']) ?>
                     </div>
                 </div>
                 <!--Note: For the basic info and job-related fields, the form takes data related to 
