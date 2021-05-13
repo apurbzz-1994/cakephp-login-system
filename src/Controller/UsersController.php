@@ -54,12 +54,23 @@ class UsersController extends AppController
         $result = $this->Authentication->getResult();
         // regardless of POST or GET, redirect if user is logged in
         if ($result->isValid()) {
-            $redirect = $this->request->getQuery('redirect', [
-                'controller' => 'Users',
-                'action' => 'index',
-            ]);
-
-            return $this->redirect($redirect);
+            $userEmail = $this->request->getAttribute('authentication')->getIdentity()->email;
+            if($userEmail == 'bobthebuilder@gmail.com'){
+                $redirect = $this->request->getQuery('redirect', [
+                    'controller' => 'Contractors',
+                    'action' => 'index',
+                ]);
+    
+                return $this->redirect($redirect);
+            }
+            else{
+                $redirect = $this->request->getQuery('redirect', [
+                    'controller' => 'Users',
+                    'action' => 'index',
+                ]);
+    
+                return $this->redirect($redirect);
+            }
         }
         // display error if user submitted and authentication failed
         if ($this->request->is('post') && !$result->isValid()) {

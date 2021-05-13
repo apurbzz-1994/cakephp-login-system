@@ -17,6 +17,10 @@
             <div class="card-body">
                 <p class="card-text">Phone Number: <?= $contractor->phone_number ?></p>
                 <p class="card-text">Expertise: <?= $contractor->expertise ?></p>
+               
+                <!--Here, I am accessing properties of the user associated with contractor-->
+                <p class="card-text">Email:  <?=$this->Html->link($contractor->user->email, ['controller' => 'Users', 'action' => 'view', $contractor->user->id])?></p>
+                <!---->
                 <?= $this->Html->link(__('Edit'), ['controller'=>'Users','action' => 'editContractor', $contractor->user->id], ['class'=>'btn btn-primary']) ?>
                 <?= $this->Form->postLink(__('Delete'), 
                 ['controller'=>'Users','action' => 'delete', $contractor->user->id], 
